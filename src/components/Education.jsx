@@ -1,4 +1,5 @@
 import React from "react";
+import cubLogo from "../assets/cub logo.png";
 
 const Education = () => {
   return (
@@ -12,14 +13,18 @@ const Education = () => {
         <p className="text-gray-400 mt-2">My academic background</p>
       </div>
 
-      <div className="max-w-3xl mx-auto bg-[#111] p-6 md:p-8 rounded-xl shadow-md border border-pink-500/20">
-        <h3 className="text-xl md:text-2xl font-semibold text-white mb-2">
+      <div className="max-w-3xl mx-auto bg-[#1a1a1a] p-6 md:p-8 rounded-xl shadow-md border border-pink-500/20 space-y-4">
+        <h3 className="text-xl md:text-2xl font-semibold text-white">
           Bachelor of Science in Computer Science & Engineering
         </h3>
-        <p className="text-pink-400 font-medium">
-          Canadian University of Bangladesh
-        </p>
-        <p className="text-gray-300 mt-2">
+
+        {/* Logo + University Name */}
+        <div className="flex items-center gap-4 text-pink-400 font-medium">
+          <img src={cubLogo} alt="CUB Logo" className="w-14 h-14 object-contain" />
+          <span>Canadian University of Bangladesh</span>
+        </div>
+
+        <p className="text-gray-300">
           I successfully completed my graduation in early 2025. During my studies, I built a strong foundation in software development, data structures, databases, and web technologies — all of which have shaped my journey as a frontend-focused developer with full stack capabilities.
         </p>
       </div>

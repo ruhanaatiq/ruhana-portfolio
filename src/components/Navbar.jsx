@@ -36,6 +36,7 @@ const Navbar = () => {
         <a href="#about" className="btn btn-ghost text-sm">About</a>
         <a href="#projects" className="btn btn-ghost text-sm">Projects</a>
         <a href="#skills" className="btn btn-ghost text-sm">Skills</a>
+          <a href="#experience" className="btn btn-ghost text-sm">Experience</a>
       </div>
 
       {/* Right: Resume & Hamburger */}
@@ -65,6 +66,7 @@ const Navbar = () => {
             <li><a href="#about" onClick={() => setMenuOpen(false)}>About</a></li>
             <li><a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a></li>
             <li><a href="#skills" onClick={() => setMenuOpen(false)}>Skills</a></li>
+            <li><a href="#experience" onClick={() => setMenuOpen(false)}>Experience</a></li>
             <li><button onClick={() => { setMenuOpen(false); handleDownload(); }}>Download Resume</button></li>
           </ul>
         )}
