@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import projectImg from "../assets/recipe-app.png";
+import carRentalImg from "../assets/car-rental.png";
+import billPayment from "../assets/bill-payment.png";
+import { FaGithub, FaExternalLinkAlt,FaHtml5  } from "react-icons/fa";
 import {
   SiReact,
   SiTailwindcss,
@@ -8,18 +11,20 @@ import {
   SiExpress,
   SiMongodb,
   SiVite,
-  SiJsonwebtokens,
+  SiJavascript,
+  SiJsonwebtokens
 } from "react-icons/si";
-import projectImg from "../assets/recipe-app.png";
-import carRentalImg from "../assets/car-rental.png";
-const techIcons = {
+
+ const techIcons = {
   React: <SiReact className="text-cyan-400" />,
   Tailwind: <SiTailwindcss className="text-sky-400" />,
   Firebase: <SiFirebase className="text-yellow-400" />,
   Express: <SiExpress className="text-gray-300" />,
   MongoDB: <SiMongodb className="text-green-500" />,
   Vite: <SiVite className="text-purple-400" />,
-
+  Html: <FaHtml5 className="text-orange-500" />,
+  Javascript: <SiJavascript className="text-yellow-300" />,
+  JWT: <SiJsonwebtokens className="text-pink-400" />,
 };
 
 const Projects = () => {
@@ -28,7 +33,7 @@ const Projects = () => {
       id: "1",
       title: "Recipe Book App",
       description: "A full-stack recipe manager app with authentication and favorites.",
-      tech: ["React", "Tailwind", "Firebase", "Express", "MongoDB"],
+      tech: ["React", "Tailwind", "Firebase", "Express", "MongoDB", "Javascript", "JWT"],
       live: "https://recipe-book-e0545.web.app/",
       github: "https://github.com/ruhanaatiq/b11a10-client-side-ruhanaatiq",
        image: projectImg,
@@ -37,14 +42,25 @@ const Projects = () => {
       id: "2",
       title: "Car Rental App",
       description: "A full-stack recipe manager app with authentication and favorites.",
-      tech: ["React", "Tailwind", "Firebase", "Express", "MongoDB","Javascript","JWT"],
+      tech: ["React", "Tailwind", "Firebase", "Express", "MongoDB", "Javascript", "JWT"],
       live: "https://car-rental-169b3.web.app/",
       github: "https://github.com/ruhanaatiq/b11a11-client-side-ruhanaatiq",
       image: carRentalImg,
-      techIcons:  { name: "JWT", icon: <SiJsonwebtokens className="text-pink-400" /> },
+      
       
     },
-    // Add more projects similarly...
+     {
+      id: "3",
+      title: "Utility Bill Payment App",
+      description: "Bill tracking app with authentication and UI-focused design.",
+       tech: ["React", "Tailwind", "Firebase","Javascript"],
+      live: "https://tall-girls.surge.sh/",
+      github: "https://github.com/ruhanaatiq/b11a9-react-authentication-ruhanaatiq",
+      image: billPayment,
+      
+      
+    },
+    // more projects coming....
   ];
 
   return (
