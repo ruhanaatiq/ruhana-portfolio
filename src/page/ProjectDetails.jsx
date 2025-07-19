@@ -17,6 +17,14 @@ const projectData = {
     github: "https://github.com/ruhanaatiq/b11a11-client-side-ruhanaatiq",
     challenges: "Managing booking conflicts and integrating secure JWT auth.",
     improvements: "Implement mobile app version and payment gateway integration.",
+  },
+    "3": {
+    title: "HealthCare App",
+    stack: ["React", "Tailwind", "Firebase", "Express", "MongoDB"],
+    description: "A complete platform to browse, purchase, and manage medicines with admin and seller features.",
+    github: "https://github.com/Programming-Hero-Web-Course4/b11a12-client-side-ruhanaatiq",
+    challenges: "Managing booking conflicts and integrating secure JWT auth.",
+    improvements: "Implement mobile app version and payment gateway integration.",
   }
 };
 

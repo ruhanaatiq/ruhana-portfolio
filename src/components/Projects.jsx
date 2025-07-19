@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import projectImg from "../assets/recipe-app.png";
 import carRentalImg from "../assets/car-rental.png";
 import billPayment from "../assets/bill-payment.png";
+import healthcare from "../assets/healthcare-app.png";
 import { FaGithub, FaExternalLinkAlt,FaHtml5  } from "react-icons/fa";
 import {
   SiReact,
@@ -60,6 +61,17 @@ const Projects = () => {
       
       
     },
+         {
+      id: "4",
+      title: "Healthcare App",
+      description: "Medicine Corner with admin and seller authorization",
+       tech: ["React", "Tailwind", "Firebase","Javascript","tanStackQuery"],
+      live: "https://healthcare-corner.web.app/",
+      github: "https://github.com/Programming-Hero-Web-Course4/b11a12-client-side-ruhanaatiq",
+      image: healthcare,
+      
+      
+    }
     // more projects coming....
   ];
 
