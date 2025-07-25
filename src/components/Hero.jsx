@@ -28,7 +28,7 @@ const Hero = () => {
           <h1 className="text-4xl md:text-5xl font-bold leading-tight">
             Hi, I’m Ruhana — <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-fuchsia-500">
-              Frontend  | UI UX Designer
+              Frontend Developer | UI UX Designer
             </span>
           </h1>
           
