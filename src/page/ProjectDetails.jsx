@@ -71,7 +71,7 @@ const ProjectDetails = () => {
             The project you’re looking for doesn’t exist or the ID is wrong.
           </p>
           <Link
-            to="/projects"
+            to="/#projects"
             className="mt-6 inline-flex items-center gap-2 rounded-xl border border-pink-500/50 px-4 py-2 text-pink-200 hover:bg-pink-500/10 transition"
           >
             <ArrowLeft size={18} />
@@ -215,7 +215,7 @@ const ProjectDetails = () => {
           {/* Back link */}
           <div className="mt-8">
             <Link
-              to="/projects"
+              to="/#projects"
               className="inline-flex items-center gap-2 text-pink-200 hover:text-pink-100"
             >
               <ArrowLeft size={18} />
