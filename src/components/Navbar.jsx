@@ -6,7 +6,7 @@ const Navbar = () => {
 
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/Ruhana_CV.pdf";
+    link.href = "/Ruhana_Atiq_Resume_Modern.pdf-1.pdf";
     link.download = "ruhana-atiq-resume.pdf";
     link.click();
   };
