@@ -4,6 +4,7 @@ import projectImg from "../assets/recipe-app.png";
 import carRentalImg from "../assets/car-rental.png";
 import billPayment from "../assets/bill-payment.png";
 import healthcare from "../assets/healthcare-app.png";
+import burger from "../assets/burger.png";
 import { FaGithub, FaExternalLinkAlt,FaHtml5  } from "react-icons/fa";
 import {
   SiReact,
@@ -69,6 +70,16 @@ const Projects = () => {
       live: "https://healthcare-corner.web.app/",
       github: "https://github.com/Programming-Hero-Web-Course4/b11a12-client-side-ruhanaatiq",
       image: healthcare,
+      
+      
+    },
+     {
+      id: "5",
+      title: "FOODGO",
+      description: "Medicine Corner with admin and seller authorization",
+       tech: ["Figma"],
+      live: "https://www.figma.com/design/Y1ekFOhLknkhFqSGOebMHn/FoodGo?node-id=0-1&t=RsR4UOWxL58HUzP2-1",
+      image: burger,
       
       
     }
