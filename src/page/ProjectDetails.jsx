@@ -9,7 +9,7 @@ const projectData = {
     stack: ["React", "Tailwind", "Firebase", "Express", "MongoDB"],
     description: "This app lets users manage recipes, with auth and likes.",
     github: "https://github.com/ruhanaatiq/b11a10-client-side-ruhanaatiq",
-    live: "", // e.g. "https://recipe.example.com"
+    live: "", 
     year: "2025",
     challenges: "Setting up secure authentication and managing nested routes.",
     improvements: "Add image upload, user comments, and role-based dashboard.",
@@ -40,7 +40,21 @@ const projectData = {
     improvements: "Mobile app + payment gateway integration.",
     thumbnail: "",
   },
+  "4": {
+  title: "FOODGo App",
+  stack: ["React", "Tailwind", "Firebase", "Express", "MongoDB"],
+  description: "A food delivery app with real-time tracking and payments.",
+  github: "",
+  live: "https://www.figma.com/design/Y1ekFOhLknkhFqSGOebMHn/FoodGo?node-id=0-1&t=RsR4UOWxL58HUzP2-1",
+  year: "2025",
+  challenges: "Handling real-time delivery tracking.",
+  improvements: "Add AI-based recommendations and route optimization.",
+  thumbnail: "",
+}
+
+  
 };
+
 
 const fadeIn = { hidden: { opacity: 0, y: 8 }, show: { opacity: 1, y: 0 } };
 
@@ -219,7 +233,7 @@ const ProjectDetails = () => {
               className="inline-flex items-center gap-2 text-pink-200 hover:text-pink-100"
             >
               <ArrowLeft size={18} />
-              Back to all projects
+              Back to Home
             </Link>
           </div>
         </motion.div>
