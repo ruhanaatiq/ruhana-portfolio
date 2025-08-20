@@ -76,13 +76,13 @@ const Projects = () => {
      {
       id: "5",
       title: "FOODGO",
-      description: "Medicine Corner with admin and seller authorization",
-       tech: ["Figma"],
+      description: "Food delivery app UI created using Figma",
+      tech: ["Figma"],
       live: "https://www.figma.com/design/Y1ekFOhLknkhFqSGOebMHn/FoodGo?node-id=0-1&t=RsR4UOWxL58HUzP2-1",
       image: burger,
       
       
-    }
+    },
     // more projects coming....
   ];
 
