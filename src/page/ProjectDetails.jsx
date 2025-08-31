@@ -52,7 +52,7 @@ const projectData = {
   thumbnail: "",
 },
 
-  "5": {
+  "6": {
   title: "Grocery App",
   stack: ["Figma"],
   description: "A food delivery app with real-time tracking and payments.",
