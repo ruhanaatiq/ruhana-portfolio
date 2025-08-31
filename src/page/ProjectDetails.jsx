@@ -13,7 +13,7 @@ const projectData = {
     year: "2025",
     challenges: "Setting up secure authentication and managing nested routes.",
     improvements: "Add image upload, user comments, and role-based dashboard.",
-    thumbnail: "", // optional image URL
+    thumbnail: "", 
   },
   "2": {
     title: "Car Rental App",
@@ -42,7 +42,7 @@ const projectData = {
   },
   "4": {
   title: "FOODGo App",
-  stack: ["React", "Tailwind", "Firebase", "Express", "MongoDB"],
+  stack: ["Figma"],
   description: "A food delivery app with real-time tracking and payments.",
   github: "",
   live: "https://www.figma.com/design/Y1ekFOhLknkhFqSGOebMHn/FoodGo?node-id=0-1&t=RsR4UOWxL58HUzP2-1",
@@ -50,7 +50,20 @@ const projectData = {
   challenges: "Handling real-time delivery tracking.",
   improvements: "Add AI-based recommendations and route optimization.",
   thumbnail: "",
+},
+
+  "5": {
+  title: "Grocery App",
+  stack: ["Figma"],
+  description: "A food delivery app with real-time tracking and payments.",
+  github: "",
+  live: "https://www.figma.com/design/1gRAVnWO9XW0ot1C0gYWTr/Grocery?node-id=0-1&t=ro7IiwHR1GoxDeiq-1",
+  year: "2025",
+  challenges: "Handling real-time delivery tracking.",
+  improvements: "Add AI-based recommendations and route optimization.",
+  thumbnail: "",
 }
+
 
   
 };

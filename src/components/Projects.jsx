@@ -5,6 +5,7 @@ import carRentalImg from "../assets/car-rental.png";
 import billPayment from "../assets/bill-payment.png";
 import healthcare from "../assets/healthcare-app.png";
 import burger from "../assets/burger.png";
+import grocery from "../assets/grocery.png";
 import { FaGithub, FaExternalLinkAlt,FaHtml5  } from "react-icons/fa";
 import {
   SiReact,
@@ -80,6 +81,16 @@ const Projects = () => {
       tech: ["Figma"],
       live: "https://www.figma.com/design/Y1ekFOhLknkhFqSGOebMHn/FoodGo?node-id=0-1&t=RsR4UOWxL58HUzP2-1",
       image: burger,
+      
+      
+    },
+     {
+      id: "6",
+      title: "Grocery App",
+      description: "Grocery delivery app UI created using Figma",
+      tech: ["Figma"],
+      live: "https://www.figma.com/design/1gRAVnWO9XW0ot1C0gYWTr/Grocery?node-id=0-1&t=ro7IiwHR1GoxDeiq-1",
+      image: grocery,
       
       
     },
