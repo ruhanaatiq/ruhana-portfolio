@@ -9,6 +9,7 @@ import {
   FaJs,
 } from "react-icons/fa";
 import {
+   SiNextdotjs,
   SiTailwindcss,
   SiExpress,
   SiVercel,
@@ -24,7 +25,7 @@ const skills = [
   { name: "JavaScript", icon: <FaJs className="text-yellow-400" /> },
   { name: "Tailwind CSS", icon: <SiTailwindcss className="text-cyan-400" /> },
   { name: "React", icon: <FaReact className="text-blue-400" /> },
-  { name: "Express.js", icon: <SiExpress className="text-gray-300" /> },
+{ name: "Next.js", icon: <SiNextdotjs className="text-white" /> },  { name: "Express.js", icon: <SiExpress className="text-gray-300" /> },
   { name: "Vite", icon: <SiVite className="text-purple-400" /> },
   { name: "MongoDB", icon: <SiMongodb className="text-green-400" /> },
   { name: "Firebase", icon: <SiFirebase className="text-yellow-400" /> },
