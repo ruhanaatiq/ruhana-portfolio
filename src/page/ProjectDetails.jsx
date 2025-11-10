@@ -4,7 +4,21 @@ import { motion } from "framer-motion";
 import { Github, ExternalLink, ArrowLeft, Copy, Check } from "lucide-react";
 
 const projectData = {
-  "1": {
+   "1": {
+    title: "Pet Adoption App",
+    stack: ["Next.js","React", "Tailwind", "Firebase", "Express", "MongoDB"],
+    description:
+    "A full-stack AI-driven pet adoption platform that connects adopters, shelters, and vets in one trusted space. Features include an AI Pet-Human Personality Matchmaker, verified vet profiles, donation & sponsorship modules, and multi-role dashboards.",
+  github: "https://github.com/ruhanaatiq/pawfect-match",
+  live: "https://pawfect-adoption.vercel.app/",
+  year: "2025",
+  challenges:
+    "Building the AI personality matching algorithm, implementing secure authentication with NextAuth, and handling multi-role authorization for admin, shelter, vet, and user dashboards.",
+  improvements:
+    "Add AI lifestyle simulation, real-time chat, mobile app version, and advanced analytics dashboard for shelters and vets.",
+    thumbnail: "", 
+  },
+  "2": {
     title: "Recipe Book App",
     stack: ["React", "Tailwind", "Firebase", "Express", "MongoDB"],
     description: "This app lets users manage recipes, with auth and likes.",
@@ -15,7 +29,7 @@ const projectData = {
     improvements: "Add image upload, user comments, and role-based dashboard.",
     thumbnail: "", 
   },
-  "2": {
+  "3": {
     title: "Car Rental App",
     stack: ["React", "Tailwind", "Firebase", "Express", "MongoDB"],
     description:
@@ -27,7 +41,7 @@ const projectData = {
     improvements: "Implement mobile app version and payment gateway integration.",
     thumbnail: "",
   },
-  "3": {
+  "4": {
     title: "HealthCare App",
     stack: ["React", "Tailwind", "Firebase", "Express", "MongoDB"],
     description:
@@ -40,7 +54,7 @@ const projectData = {
     improvements: "Mobile app + payment gateway integration.",
     thumbnail: "",
   },
-  "4": {
+  "5": {
   title: "FOODGo App",
   stack: ["Figma"],
   description: "A food delivery app with real-time tracking and payments.",

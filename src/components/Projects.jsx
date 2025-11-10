@@ -4,6 +4,7 @@ import projectImg from "../assets/recipe-app.png";
 import carRentalImg from "../assets/car-rental.png";
 import billPayment from "../assets/bill-payment.png";
 import healthcare from "../assets/healthcare-app.png";
+import pet from "../assets/pet-adoption.png";
 import burger from "../assets/burger.png";
 import grocery from "../assets/grocery.png";
 import { FaGithub, FaExternalLinkAlt,FaHtml5  } from "react-icons/fa";
@@ -15,11 +16,13 @@ import {
   SiMongodb,
   SiVite,
   SiJavascript,
-  SiJsonwebtokens
+  SiJsonwebtokens,
+  SiNextdotjs
 } from "react-icons/si";
 
  const techIcons = {
   React: <SiReact className="text-cyan-400" />,
+  "Next.js": <SiNextdotjs className="text-white" />,
   Tailwind: <SiTailwindcss className="text-sky-400" />,
   Firebase: <SiFirebase className="text-yellow-400" />,
   Express: <SiExpress className="text-gray-300" />,
@@ -32,8 +35,17 @@ import {
 
 const Projects = () => {
   const projectList = [
-    {
+      {
       id: "1",
+      title: "Pet Adoption App",
+      description: "A full-stack recipe manager app with authentication and favorites.",
+      tech: ["Next.js","React", "Tailwind", "Firebase", "Express", "MongoDB", "Javascript", "JWT"],
+      live: "https://pawfect-adoption.vercel.app/",
+      github: "https://github.com/ruhanaatiq/pawfect-match",
+       image: pet,
+    },
+    {
+      id: "2",
       title: "Recipe Book App",
       description: "A full-stack recipe manager app with authentication and favorites.",
       tech: ["React", "Tailwind", "Firebase", "Express", "MongoDB", "Javascript", "JWT"],
@@ -42,7 +54,7 @@ const Projects = () => {
        image: projectImg,
     },
      {
-      id: "2",
+      id: "3",
       title: "Car Rental App",
       description: "A full-stack recipe manager app with authentication and favorites.",
       tech: ["React", "Tailwind", "Firebase", "Express", "MongoDB", "Javascript", "JWT"],
@@ -53,7 +65,7 @@ const Projects = () => {
       
     },
      {
-      id: "3",
+      id: "4",
       title: "Utility Bill Payment App",
       description: "Bill tracking app with authentication and UI-focused design.",
        tech: ["React", "Tailwind", "Firebase","Javascript"],
@@ -64,7 +76,7 @@ const Projects = () => {
       
     },
          {
-      id: "4",
+      id: "5",
       title: "Healthcare App",
       description: "Medicine Corner with admin and seller authorization",
        tech: ["React", "Tailwind", "Firebase","Javascript","tanStackQuery"],
@@ -75,7 +87,7 @@ const Projects = () => {
       
     },
      {
-      id: "5",
+      id: "6",
       title: "FOODGO",
       description: "Food delivery app UI created using Figma",
       tech: ["Figma"],
@@ -85,7 +97,7 @@ const Projects = () => {
       
     },
      {
-      id: "6",
+      id: "7",
       title: "Grocery App",
       description: "Grocery delivery app UI created using Figma",
       tech: ["Figma"],
