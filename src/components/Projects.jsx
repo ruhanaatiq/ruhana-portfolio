@@ -64,19 +64,9 @@ const Projects = () => {
       
       
     },
-     {
-      id: "4",
-      title: "Utility Bill Payment App",
-      description: "Bill tracking app with authentication and UI-focused design.",
-       tech: ["React", "Tailwind", "Firebase","Javascript"],
-      live: "https://tall-girls.surge.sh/",
-      github: "https://github.com/ruhanaatiq/b11a9-react-authentication-ruhanaatiq",
-      image: billPayment,
-      
-      
-    },
+    
          {
-      id: "5",
+      id: "4",
       title: "Healthcare App",
       description: "Medicine Corner with admin and seller authorization",
        tech: ["React", "Tailwind", "Firebase","Javascript","tanStackQuery"],
@@ -87,7 +77,7 @@ const Projects = () => {
       
     },
      {
-      id: "6",
+      id: "5",
       title: "FOODGO",
       description: "Food delivery app UI created using Figma",
       tech: ["Figma"],
@@ -97,7 +87,7 @@ const Projects = () => {
       
     },
      {
-      id: "7",
+      id: "6",
       title: "Grocery App",
       description: "Grocery delivery app UI created using Figma",
       tech: ["Figma"],

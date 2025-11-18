@@ -70,7 +70,7 @@ const projectData = {
   title: "Grocery App",
   stack: ["Figma"],
   description: "A food delivery app with real-time tracking and payments.",
-  github: "",
+ 
   live: "https://www.figma.com/design/1gRAVnWO9XW0ot1C0gYWTr/Grocery?node-id=0-1&t=ro7IiwHR1GoxDeiq-1",
   year: "2025",
   challenges: "Handling real-time delivery tracking.",
