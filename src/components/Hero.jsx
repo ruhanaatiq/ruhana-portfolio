@@ -95,7 +95,7 @@ const Hero = () => {
 
             {/* TODO: update href with your actual resume link */}
             <motion.a
-              href="/Ruhana_Atiq_Resume.pdf"
+              href="/Resume of Ruhana_Atiq.pdf"
               className="btn btn-ghost border border-white/10 text-xs md:text-sm hover:border-pink-400/70"
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.96 }}
