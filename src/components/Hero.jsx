@@ -44,16 +44,17 @@ const Hero = () => {
             Crafting
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-fuchsia-400 to-purple-400">
               {" "}
-              clean & user-focused{" "}
+              clean, modern & user-focused{" "}
             </span>
             web experiences.
           </h1>
 
           <p className="text-sm md:text-base text-gray-200 max-w-xl mx-auto md:mx-0">
-            I’m Ruhana, a frontend developer and aspiring UI/UX designer
-            building responsive, accessible interfaces with React, Next.js and
-            modern CSS. I love turning ideas into smooth, interactive experiences
-            that feel effortless to use.
+            I’m Ruhana, a Frontend Developer and UI/UX Designer building
+            responsive, accessible interfaces with React, Next.js and modern
+            CSS. I love turning product ideas into smooth, interactive
+            experiences that feel effortless for users — from the first pixel to
+            the last line of code.
           </p>
 
           {/* Tech pills */}
@@ -80,7 +81,7 @@ const Hero = () => {
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.96 }}
             >
-              View Projects
+              Explore Projects
             </motion.a>
 
             <motion.a
@@ -91,15 +92,19 @@ const Hero = () => {
             >
               Let&apos;s Collaborate
             </motion.a>
+
+            {/* TODO: update href with your actual resume link */}
+            <motion.a
+              href="/Ruhana_Atiq_Resume.pdf"
+              className="btn btn-ghost border border-white/10 text-xs md:text-sm hover:border-pink-400/70"
+              whileHover={{ scale: 1.05, y: -2 }}
+              whileTap={{ scale: 0.96 }}
+            >
+              Download Resume
+            </motion.a>
           </div>
 
-          {/* Small status line */}
-          <p className="text-xs md:text-sm text-gray-400 pt-1">
-            Currently open to{" "}
-            <span className="text-pink-300">
-              frontend & UI-focused roles / projects.
-            </span>
-          </p>
+    
         </motion.div>
 
         {/* IMAGE SIDE */}
@@ -126,9 +131,6 @@ const Hero = () => {
                 />
               </div>
             </div>
-
-         
-            
           </div>
         </motion.div>
       </motion.div>
