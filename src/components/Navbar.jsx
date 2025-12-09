@@ -3,6 +3,7 @@ import logo from "../assets/logo.png";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   const handleDownload = () => {
     const link = document.createElement("a");
@@ -11,41 +12,65 @@ const Navbar = () => {
     link.click();
   };
 
-  // Close menu on scroll or resize (optional UX improvement)
+  // Shadow + blur when scrolling
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 10);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  // Close menu on scroll or resize
   useEffect(() => {
     const handleResizeOrScroll = () => setMenuOpen(false);
-    window.addEventListener("scroll", handleResizeOrScroll);
     window.addEventListener("resize", handleResizeOrScroll);
+    window.addEventListener("scroll", handleResizeOrScroll);
+
     return () => {
-      window.removeEventListener("scroll", handleResizeOrScroll);
       window.removeEventListener("resize", handleResizeOrScroll);
+      window.removeEventListener("scroll", handleResizeOrScroll);
     };
   }, []);
 
   return (
-    <div className="navbar bg-base-100 sticky top-0 z-50 shadow px-4 md:px-10">
+    <div
+      className={`navbar fixed top-0 z-50 px-4 md:px-10 transition-all duration-300 ${
+        scrolled
+          ? "bg-black/60 backdrop-blur-md border-b border-white/10 shadow-lg"
+          : "bg-transparent"
+      }`}
+    >
       {/* Left: Logo */}
       <div className="flex-1">
-        <a href="#" className="flex items-center gap-2">
-          <img src={logo} alt="Logo" className="w-10 h-10 object-contain" />
+        <a href="#hero" className="flex items-center gap-2">
+          <img
+            src={logo}
+            alt="Logo"
+            className="w-10 h-10 object-contain drop-shadow"
+          />
+          <span className="font-semibold text-white tracking-wide text-sm hidden md:block">
+            RUHANA ATIQ
+          </span>
         </a>
       </div>
 
       {/* Middle: Desktop Menu */}
-      <div className="hidden md:flex gap-4">
-        <a href="#about" className="btn btn-ghost text-sm">About</a>
-        <a href="#projects" className="btn btn-ghost text-sm">Projects</a>
-        <a href="#skills" className="btn btn-ghost text-sm">Skills</a>
-          <a href="#experience" className="btn btn-ghost text-sm">Experience</a>
+      <div className="hidden md:flex gap-6">
+        <a href="#about" className="nav-link">About</a>
+        <a href="#projects" className="nav-link">Projects</a>
+        <a href="#skills" className="nav-link">Skills</a>
+        <a href="#experience" className="nav-link">Experience</a>
       </div>
 
       {/* Right: Resume & Hamburger */}
       <div className="flex items-center gap-2 relative">
         <button
           onClick={handleDownload}
-          className="btn btn-outline border-pink-500 hover:bg-pink-400 btn-sm hidden md:block"
+          className="hidden md:block px-4 py-2 text-sm rounded-lg border border-pink-400/50 text-pink-200 hover:bg-pink-500/20 hover:border-pink-400 transition-all duration-200"
         >
-          Download Resume
+          Resume
         </button>
 
         {/* Hamburger Icon */}
@@ -53,8 +78,13 @@ const Navbar = () => {
           className="btn btn-ghost btn-circle md:hidden"
           onClick={() => setMenuOpen(!menuOpen)}
         >
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none"
-            viewBox="0 0 24 24" stroke="currentColor">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6 text-white"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
               d="M4 6h16M4 12h16M4 18h16" />
           </svg>
@@ -62,12 +92,19 @@ const Navbar = () => {
 
         {/* Mobile Dropdown */}
         {menuOpen && (
-          <ul className="absolute top-14 right-0 bg-base-100 w-48 p-4 rounded-lg shadow-md z-50 flex flex-col gap-3 text-sm">
-            <li><a href="#about" onClick={() => setMenuOpen(false)}>About</a></li>
-            <li><a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a></li>
-            <li><a href="#skills" onClick={() => setMenuOpen(false)}>Skills</a></li>
-            <li><a href="#experience" onClick={() => setMenuOpen(false)}>Experience</a></li>
-            <li><button onClick={() => { setMenuOpen(false); handleDownload(); }}>Download Resume</button></li>
+          <ul className="absolute top-14 right-0 bg-black/80 backdrop-blur-lg w-48 p-4 rounded-xl shadow-xl border border-white/10 z-50 flex flex-col gap-3 text-sm">
+            <li><a className="mobile-link" href="#about">About</a></li>
+            <li><a className="mobile-link" href="#projects">Projects</a></li>
+            <li><a className="mobile-link" href="#skills">Skills</a></li>
+            <li><a className="mobile-link" href="#experience">Experience</a></li>
+            <li>
+              <button
+                className="mobile-link text-left"
+                onClick={() => { setMenuOpen(false); handleDownload(); }}
+              >
+                Download Resume
+              </button>
+            </li>
           </ul>
         )}
       </div>

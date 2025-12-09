@@ -1,2 +1,11 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+
+.nav-link {
+  @apply text-sm text-gray-200 hover:text-pink-300 transition duration-200;
+}
+
+.mobile-link {
+  @apply text-gray-200 hover:text-pink-300 transition-all duration-200;
+}
