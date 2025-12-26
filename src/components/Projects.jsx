@@ -8,6 +8,7 @@ import healthcare from "../assets/healthcare-app.png";
 import pet from "../assets/pet-adoption.png";
 import burger from "../assets/burger.png";
 import grocery from "../assets/grocery.png";
+import coursemasterImg from "../assets/course-master.png";
 
 import { FaGithub, FaExternalLinkAlt, FaHtml5 } from "react-icons/fa";
 import {
@@ -91,6 +92,25 @@ const Projects = () => {
     {
       id: "3",
       category: "fullstack",
+      title: "CourseMaster - Online Learning Platform",
+      description:
+        "Full-stack recipe manager with authentication, favorites, and dynamic top recipes.",
+      tech: ["Next.js",
+        "React",
+        "Tailwind",
+        "Firebase",
+        "Express",
+        "MongoDB",
+        "Javascript",
+        "JWT",
+      ],
+      live: "https://coursemaster-frontend.vercel.app",
+      github: "https://github.com/ruhanaatiq/coursemaster",
+      image: coursemasterImg,
+    },
+    {
+      id: "4",
+      category: "fullstack",
       title: "Car Rental App",
       description:
         "Car rental platform with JWT auth, protected routes, booking management and dashboard.",
@@ -108,7 +128,7 @@ const Projects = () => {
       image: carRentalImg,
     },
     {
-      id: "4",
+      id: "5",
       category: "fullstack",
       title: "Healthcare Corner",
       description:
@@ -120,7 +140,7 @@ const Projects = () => {
       image: healthcare,
     },
     {
-      id: "5",
+      id: "6",
       category: "ui",
       title: "FOODGO – Food Delivery UI",
       description:
@@ -130,7 +150,7 @@ const Projects = () => {
       image: burger,
     },
     {
-      id: "6",
+      id: "7",
       category: "ui",
       title: "Grocery App UI",
       description:

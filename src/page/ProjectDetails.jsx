@@ -29,7 +29,21 @@ const projectData = {
     improvements: "Add image upload, user comments, and role-based dashboard.",
     thumbnail: "", 
   },
-  "3": {
+"3": {
+  title: "CourseMaster – Online Learning Platform",
+  stack: ["Next.js", "React", "Tailwind CSS", "Firebase", "Express.js", "MongoDB"],
+  description:
+    "A full-stack Learning Management System (LMS) where students can enroll in courses, track progress, and submit assignments, while admins manage courses, users, and analytics.",
+  github: "https://github.com/ruhanaatiq/b11a10-client-side-ruhanaatiq",
+  live: "https://coursemaster-frontend.vercel.app",
+  year: "2025",
+  challenges:
+    "Implementing JWT-based authentication, role-based access control (student/admin), and handling protected routes with Next.js App Router.",
+  improvements:
+    "Integrate Stripe payments for paid courses, add instructor roles, enhance analytics dashboards, and implement certificate generation.",
+  thumbnail: "/images/projects/coursemaster.png"
+},
+  "4": {
     title: "Car Rental App",
     stack: ["React", "Tailwind", "Firebase", "Express", "MongoDB"],
     description:
@@ -41,7 +55,7 @@ const projectData = {
     improvements: "Implement mobile app version and payment gateway integration.",
     thumbnail: "",
   },
-  "4": {
+  "5": {
     title: "HealthCare App",
     stack: ["React", "Tailwind", "Firebase", "Express", "MongoDB"],
     description:
@@ -54,7 +68,7 @@ const projectData = {
     improvements: "Mobile app + payment gateway integration.",
     thumbnail: "",
   },
-  "5": {
+  "6": {
   title: "FOODGo App",
   stack: ["Figma"],
   description: "A food delivery app with real-time tracking and payments.",
@@ -66,7 +80,7 @@ const projectData = {
   thumbnail: "",
 },
 
-  "6": {
+  "7": {
   title: "Grocery App",
   stack: ["Figma"],
   description: "A food delivery app with real-time tracking and payments.",
