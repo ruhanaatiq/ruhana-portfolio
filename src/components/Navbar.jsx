@@ -7,8 +7,8 @@ const Navbar = () => {
 
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/Ruhana_Atiq_Resume.pdf";
-    link.download = "ruhana-atiq-resume.pdf";
+    link.href = "/01-Ruhana_Atiq_Resume.pdf";
+    link.download = "01-Ruhana_Atiq_Resume.pdf";
     link.click();
   };
 
