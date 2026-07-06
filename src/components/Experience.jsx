@@ -1,8 +1,23 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaBriefcase, FaUniversity } from "react-icons/fa";
+import { FaBriefcase, FaUniversity, FaLaptopCode, } from "react-icons/fa";
 
 const experiences = [
+   {
+    title: "Web Developer",
+    organization: "GAO Tek Inc. (Remote)",
+    period: "Mar 2026 – Present",
+    icon: <FaLaptopCode />,
+    responsibilities: [
+      "Develop and maintain responsive WordPress websites using Elementor.",
+      "Build custom landing pages using HTML, CSS and JavaScript.",
+      "Customize WordPress themes and website layouts.",
+      "Configure Google Analytics and Google reCAPTCHA.",
+      "Perform website backups, plugin updates and routine maintenance.",
+      "Develop custom responsive navigation menus and UI components.",
+      "Collaborate with international teams while following brand guidelines.",
+    ],
+  },
   {
     title: "Project Manager",
     organization: "Invicta Technical College, Australia",
