@@ -9,6 +9,7 @@ import pet from "../assets/pet-adoption.png";
 import burger from "../assets/burger.png";
 import grocery from "../assets/grocery.png";
 import coursemasterImg from "../assets/course-master.png";
+import chemforgeImg from "../assets/chemforge.png";
 
 import { FaGithub, FaExternalLinkAlt, FaHtml5 } from "react-icons/fa";
 import {
@@ -23,6 +24,8 @@ import {
   SiNextdotjs,
   SiFigma,
   SiReactquery,
+  SiWordpress,
+  SiElementor,
 } from "react-icons/si";
 
 const techIcons = {
@@ -38,10 +41,14 @@ const techIcons = {
   JWT: <SiJsonwebtokens className="text-pink-400" />,
   Figma: <SiFigma className="text-pink-400" />,
   tanStackQuery: <SiReactquery className="text-red-400" />,
+  WordPress: <SiWordpress className="text-blue-400" />,
+Elementor: <SiElementor className="text-pink-400" />,
+CSS: <SiJavascript className="text-blue-300" />,
 };
 
 const filters = [
   { id: "all", label: "All" },
+  { id: "wordpress", label: "WordPress Websites" },
   { id: "fullstack", label: "Full-Stack Apps" },
   { id: "ui", label: "UI & UX" },
 ];
@@ -159,6 +166,18 @@ const Projects = () => {
       live: "https://www.figma.com/design/1gRAVnWO9XW0ot1C0gYWTr/Grocery?node-id=0-1&t=ro7IiwHR1GoxDeiq-1",
       image: grocery,
     },
+    {
+  id: "8",
+  category: "wordpress",
+  title: "ChemForge AI",
+  description:
+    "Corporate WordPress website for an AIoT industrial chemical operations platform. Built responsive pages, customized layouts, improved UI consistency, and created a mobile-friendly navigation experience.",
+  tech: ["WordPress", "Elementor", "HTML", "CSS", "JavaScript"],
+  live: "https://chemforgeai.com/",
+  
+  image: chemforgeImg,
+},
+
   ];
 
   const filteredProjects =

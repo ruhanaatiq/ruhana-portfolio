@@ -3,101 +3,134 @@ import { Link, useParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Github, ExternalLink, ArrowLeft, Copy, Check } from "lucide-react";
 
+
 const projectData = {
-   "1": {
+  "1": {
     title: "Pet Adoption App",
-    stack: ["Next.js","React", "Tailwind", "Firebase", "Express", "MongoDB"],
+    stack: ["Next.js", "React", "Tailwind", "Firebase", "Express", "MongoDB"],
     description:
-    "A full-stack AI-driven pet adoption platform that connects adopters, shelters, and vets in one trusted space. Features include an AI Pet-Human Personality Matchmaker, verified vet profiles, donation & sponsorship modules, and multi-role dashboards.",
-  github: "https://github.com/ruhanaatiq/pawfect-match",
-  live: "https://pawfect-adoption.vercel.app/",
-  year: "2025",
-  challenges:
-    "Building the AI personality matching algorithm, implementing secure authentication with NextAuth, and handling multi-role authorization for admin, shelter, vet, and user dashboards.",
-  improvements:
-    "Add AI lifestyle simulation, real-time chat, mobile app version, and advanced analytics dashboard for shelters and vets.",
-    thumbnail: "", 
+      "A full-stack AI-driven pet adoption platform that connects adopters, shelters, and vets in one trusted space.",
+    github: "https://github.com/ruhanaatiq/pawfect-match",
+    live: "https://pawfect-adoption.vercel.app/",
+    year: "2025",
+    challenges:
+      "Building the AI personality matching algorithm, secure authentication, and multi-role dashboards.",
+    improvements:
+      "Add real-time chat, mobile app version, and advanced analytics dashboard.",
+    thumbnail: "",
   },
+
   "2": {
     title: "Recipe Book App",
     stack: ["React", "Tailwind", "Firebase", "Express", "MongoDB"],
-    description: "This app lets users manage recipes, with auth and likes.",
+    description:
+      "A recipe management app where users can add, like, and manage recipes with authentication.",
     github: "https://github.com/ruhanaatiq/b11a10-client-side-ruhanaatiq",
-    live: "", 
+    live: "",
     year: "2025",
-    challenges: "Setting up secure authentication and managing nested routes.",
-    improvements: "Add image upload, user comments, and role-based dashboard.",
-    thumbnail: "", 
+    challenges:
+      "Setting up secure authentication and managing nested routes.",
+    improvements:
+      "Add image upload, user comments, and role-based dashboard.",
+    thumbnail: "",
   },
-"3": {
-  title: "CourseMaster – Online Learning Platform",
-  stack: ["Next.js", "React", "Tailwind CSS", "Firebase", "Express.js", "MongoDB"],
-  description:
-    "A full-stack Learning Management System (LMS) where students can enroll in courses, track progress, and submit assignments, while admins manage courses, users, and analytics.",
-  github: "https://github.com/ruhanaatiq/b11a10-client-side-ruhanaatiq",
-  live: "https://coursemaster-frontend.vercel.app",
-  year: "2025",
-  challenges:
-    "Implementing JWT-based authentication, role-based access control (student/admin), and handling protected routes with Next.js App Router.",
-  improvements:
-    "Integrate Stripe payments for paid courses, add instructor roles, enhance analytics dashboards, and implement certificate generation.",
-  thumbnail: "/images/projects/coursemaster.png"
-},
+
+  "3": {
+    title: "CourseMaster – Online Learning Platform",
+    stack: ["Next.js", "React", "Tailwind CSS", "Firebase", "Express.js", "MongoDB"],
+    description:
+      "A full-stack Learning Management System where students can enroll in courses, track progress, and submit assignments.",
+    github: "https://github.com/ruhanaatiq/coursemaster",
+    live: "https://coursemaster-frontend.vercel.app",
+    year: "2025",
+    challenges:
+      "Implementing JWT authentication, role-based access control, and protected routes.",
+    improvements:
+      "Add Stripe payments, instructor roles, analytics dashboards, and certificate generation.",
+    thumbnail: "",
+  },
+
   "4": {
     title: "Car Rental App",
     stack: ["React", "Tailwind", "Firebase", "Express", "MongoDB"],
     description:
-      "A complete platform to browse, rent, and manage cars with admin features.",
+      "A car rental platform to browse, book, and manage rental cars with secure dashboards.",
     github: "https://github.com/ruhanaatiq/b11a11-client-side-ruhanaatiq",
     live: "",
     year: "2025",
-    challenges: "Managing booking conflicts and integrating secure JWT auth.",
-    improvements: "Implement mobile app version and payment gateway integration.",
+    challenges:
+      "Managing booking conflicts and integrating secure JWT authentication.",
+    improvements:
+      "Add payment gateway integration and mobile app version.",
     thumbnail: "",
   },
+
   "5": {
     title: "HealthCare App",
     stack: ["React", "Tailwind", "Firebase", "Express", "MongoDB"],
     description:
-      "A platform to browse, purchase, and manage medicines with admin & seller features.",
+      "A medicine e-commerce platform with admin, seller, and user dashboard features.",
     github:
       "https://github.com/Programming-Hero-Web-Course4/b11a12-client-side-ruhanaatiq",
     live: "",
     year: "2025",
-    challenges: "Inventory sync & secure JWT auth across roles.",
-    improvements: "Mobile app + payment gateway integration.",
+    challenges:
+      "Handling inventory synchronization and secure authentication across roles.",
+    improvements:
+      "Add mobile app version and advanced payment features.",
     thumbnail: "",
   },
+
   "6": {
-  title: "FOODGo App",
-  stack: ["Figma"],
-  description: "A food delivery app with real-time tracking and payments.",
-  github: "",
-  live: "https://www.figma.com/design/Y1ekFOhLknkhFqSGOebMHn/FoodGo?node-id=0-1&t=RsR4UOWxL58HUzP2-1",
-  year: "2025",
-  challenges: "Handling real-time delivery tracking.",
-  improvements: "Add AI-based recommendations and route optimization.",
-  thumbnail: "",
-},
+    title: "FOODGo App",
+    stack: ["Figma"],
+    description:
+      "A food delivery mobile UI concept with ordering, tracking, and payment screens.",
+    github: "",
+    live: "https://www.figma.com/design/Y1ekFOhLknkhFqSGOebMHn/FoodGo?node-id=0-1&t=RsR4UOWxL58HUzP2-1",
+    year: "2025",
+    challenges:
+      "Designing a smooth delivery flow and clean mobile user experience.",
+    improvements:
+      "Add AI-based food recommendations and route optimization.",
+    thumbnail: "",
+  },
 
   "7": {
-  title: "Grocery App",
-  stack: ["Figma"],
-  description: "A food delivery app with real-time tracking and payments.",
- 
-  live: "https://www.figma.com/design/1gRAVnWO9XW0ot1C0gYWTr/Grocery?node-id=0-1&t=ro7IiwHR1GoxDeiq-1",
-  year: "2025",
-  challenges: "Handling real-time delivery tracking.",
-  improvements: "Add AI-based recommendations and route optimization.",
+    title: "Grocery App",
+    stack: ["Figma"],
+    description:
+      "A grocery delivery mobile UI design with reusable components and clean product browsing screens.",
+    github: "",
+    live: "https://www.figma.com/design/1gRAVnWO9XW0ot1C0gYWTr/Grocery?node-id=0-1&t=ro7IiwHR1GoxDeiq-1",
+    year: "2025",
+    challenges:
+      "Creating reusable UI components and maintaining design consistency.",
+    improvements:
+      "Add delivery tracking, wishlist, and personalized recommendations.",
+    thumbnail: "",
+  },
+
+"8": {
+  title: "ChemForge AI",
+  stack: ["WordPress", "Elementor", "HTML", "CSS", "JavaScript", "Responsive Design"],
+  description:
+    "Designed and developed the ChemForge AI corporate website using WordPress and Elementor. Created responsive landing pages, custom navigation menus, reusable UI sections, optimized layouts for desktop, tablet, and mobile devices, and maintained consistent branding across the website.",
+  github: "",
+  live: "https://chemforgeai.com/",
+  year: "2026",
+  challenges:
+    "Developing a fully responsive navigation system, maintaining consistent layouts across multiple pages, optimizing performance, and ensuring compatibility across desktop, tablet, and mobile devices.",
+  improvements:
+    "Continue improving SEO, enhance accessibility, expand AI solution pages, and add more interactive visual sections.",
   thumbnail: "",
-}
-
-
-  
+},
 };
 
-
-const fadeIn = { hidden: { opacity: 0, y: 8 }, show: { opacity: 1, y: 0 } };
+const fadeIn = {
+  hidden: { opacity: 0, y: 8 },
+  show: { opacity: 1, y: 0 },
+};
 
 const ProjectDetails = () => {
   const { id } = useParams();
@@ -106,25 +139,29 @@ const ProjectDetails = () => {
 
   const handleCopy = async () => {
     if (!project?.github) return;
-    await navigator.clipboard.writeText(project.github);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 1200);
+
+    try {
+      await navigator.clipboard.writeText(project.github);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 1200);
+    } catch (error) {
+      console.error("Failed to copy link:", error);
+    }
   };
 
   if (!project) {
     return (
-      <section className="relative min-h-[70vh] overflow-hidden">
-        {/* Background */}
+      <section className="relative min-h-[70vh] overflow-hidden bg-black">
         <div className="pointer-events-none absolute inset-0 -z-10">
           <div className="absolute inset-0 bg-[radial-gradient(60%_60%_at_50%_0%,rgba(255,0,128,0.25),rgba(0,0,0,0)_60%)]" />
-          <div className="absolute inset-0 opacity-20 [background-image:linear-gradient(to_right,rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.08)_1px,transparent_1px)] [background-size:28px_28px]" />
         </div>
 
         <div className="max-w-2xl mx-auto px-4 py-24 text-center">
           <h2 className="text-3xl font-bold text-white">Project not found</h2>
           <p className="mt-2 text-gray-300">
-            The project you’re looking for doesn’t exist or the ID is wrong.
+            The project you are looking for does not exist.
           </p>
+
           <Link
             to="/#projects"
             className="mt-6 inline-flex items-center gap-2 rounded-xl border border-pink-500/50 px-4 py-2 text-pink-200 hover:bg-pink-500/10 transition"
@@ -138,25 +175,31 @@ const ProjectDetails = () => {
   }
 
   return (
-    <section className="relative min-h-screen overflow-hidden">
-      {/* Animated background: soft gradient + subtle grid */}
+    <section className="relative min-h-screen overflow-hidden bg-black">
       <div className="pointer-events-none absolute inset-0 -z-10">
-        <div className="absolute -top-24 left-1/2 h-[32rem] w-[32rem] -translate-x-1/2 rounded-full blur-3xl opacity-30 animate-pulse"
-             style={{ background: "radial-gradient(circle at 50% 50%, #ec4899, rgba(0,0,0,0) 60%)" }} />
+        <div
+          className="absolute -top-24 left-1/2 h-[32rem] w-[32rem] -translate-x-1/2 rounded-full blur-3xl opacity-30 animate-pulse"
+          style={{
+            background:
+              "radial-gradient(circle at 50% 50%, #ec4899, rgba(0,0,0,0) 60%)",
+          }}
+        />
         <div className="absolute inset-0 opacity-15 [background-image:linear-gradient(to_right,rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.08)_1px,transparent_1px)] [background-size:28px_28px]" />
       </div>
 
       <div className="max-w-5xl mx-auto px-4 py-20">
-        {/* Breadcrumb */}
         <nav className="mb-6 text-sm text-gray-300">
-          <Link to="/" className="hover:text-white/90">Home</Link>
+          <Link to="/" className="hover:text-white/90">
+            Home
+          </Link>
           <span className="mx-2 text-gray-500">/</span>
-          <Link to="/projects" className="hover:text-white/90">Projects</Link>
+          <Link to="/#projects" className="hover:text-white/90">
+            Projects
+          </Link>
           <span className="mx-2 text-gray-500">/</span>
           <span className="text-white/90">{project.title}</span>
         </nav>
 
-        {/* Header card */}
         <motion.div
           variants={fadeIn}
           initial="hidden"
@@ -166,11 +209,22 @@ const ProjectDetails = () => {
         >
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
             <div>
-              <h1 className="text-3xl font-bold text-white">{project.title}</h1>
+              <span className="inline-block mb-3 rounded-full border border-pink-500/40 bg-pink-500/10 px-3 py-1 text-xs font-medium text-pink-200">
+                {project.stack.includes("WordPress")
+                  ? "WordPress Website"
+                  : project.stack.includes("Figma")
+                  ? "UI / UX Design"
+                  : "Full-Stack Project"}
+              </span>
+
+              <h1 className="text-3xl md:text-4xl font-bold text-white">
+                {project.title}
+              </h1>
+
               {(project.year || project.live) && (
-                <p className="mt-1 text-gray-300">
+                <p className="mt-2 text-gray-300">
                   {project.year && <span>{project.year}</span>}
-                  {project.year && project.live ? <span className="mx-2">•</span> : null}
+                  {project.year && project.live && <span className="mx-2">•</span>}
                   {project.live && (
                     <a
                       href={project.live}
@@ -187,54 +241,58 @@ const ProjectDetails = () => {
 
             <div className="flex flex-wrap items-center gap-3">
               {project.github && (
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-xl border border-pink-500/60 px-4 py-2 text-pink-100 hover:bg-pink-500/10 transition focus:outline-none focus:ring-2 focus:ring-pink-400/60"
-                >
-                  <Github size={18} />
-                  GitHub
-                </a>
+                <>
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 rounded-xl border border-pink-500/60 px-4 py-2 text-pink-100 hover:bg-pink-500/10 transition"
+                  >
+                    <Github size={18} />
+                    GitHub
+                  </a>
+
+                  <button
+                    onClick={handleCopy}
+                    className="inline-flex items-center gap-2 rounded-xl border border-white/15 px-3 py-2 text-gray-200 hover:bg-white/10 transition"
+                    aria-label="Copy repository URL"
+                  >
+                    {copied ? <Check size={18} /> : <Copy size={18} />}
+                    {copied ? "Copied" : "Copy link"}
+                  </button>
+                </>
               )}
-              <button
-                onClick={handleCopy}
-                className="inline-flex items-center gap-2 rounded-xl border border-white/15 px-3 py-2 text-gray-200 hover:bg-white/10 transition focus:outline-none focus:ring-2 focus:ring-white/40"
-                aria-label="Copy repository URL"
-              >
-                {copied ? <Check size={18} /> : <Copy size={18} />}
-                {copied ? "Copied" : "Copy link"}
-              </button>
+
               {project.live && (
                 <a
                   href={project.live}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-xl border border-white/15 px-4 py-2 text-gray-200 hover:bg-white/10 transition focus:outline-none focus:ring-2 focus:ring-white/40"
+                  className="inline-flex items-center gap-2 rounded-xl border border-white/15 px-4 py-2 text-gray-200 hover:bg-white/10 transition"
                 >
                   <ExternalLink size={18} />
-                  Open
+                  Open Website
                 </a>
               )}
             </div>
           </div>
 
-          {/* Thumb (optional) */}
-          {project.thumbnail ? (
-            <div className="mt-6 overflow-hidden rounded-xl border border-white/10">
+          {project.thumbnail && (
+            <div className="mt-8 overflow-hidden rounded-xl border border-white/10">
               <img
                 src={project.thumbnail}
                 alt={`${project.title} preview`}
-                className="w-full object-cover"
+                className="w-full max-h-[480px] object-cover object-top"
               />
             </div>
-          ) : null}
+          )}
 
-          {/* Description */}
-          <p className="mt-6 text-gray-200 leading-relaxed">{project.description}</p>
+          <p className="mt-6 text-gray-200 leading-relaxed">
+            {project.description}
+          </p>
 
-          {/* Stack */}
           <h3 className="mt-8 text-xl font-semibold text-white">Stack Used</h3>
+
           <motion.div
             className="mt-3 flex flex-wrap gap-2"
             initial="hidden"
@@ -255,19 +313,22 @@ const ProjectDetails = () => {
             ))}
           </motion.div>
 
-          {/* Two-column details */}
           <div className="mt-10 grid gap-6 md:grid-cols-2">
             <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
-              <h4 className="text-lg font-semibold text-white mb-2">Challenges Faced</h4>
+              <h4 className="text-lg font-semibold text-white mb-2">
+                Challenges Faced
+              </h4>
               <p className="text-gray-300">{project.challenges}</p>
             </div>
+
             <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
-              <h4 className="text-lg font-semibold text-white mb-2">Future Plans</h4>
+              <h4 className="text-lg font-semibold text-white mb-2">
+                Future Plans
+              </h4>
               <p className="text-gray-300">{project.improvements}</p>
             </div>
           </div>
 
-          {/* Back link */}
           <div className="mt-8">
             <Link
               to="/#projects"
